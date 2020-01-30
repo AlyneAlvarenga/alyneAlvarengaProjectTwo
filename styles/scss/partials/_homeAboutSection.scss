@@ -1,0 +1,17 @@
+.aboutSection {
+    background-color: $whiteShade;
+    padding: 120px 0 100px;
+    h3 {
+        margin-top: 10px;
+    }
+}
+
+.aboutPicContainer {
+    flex: 0 0 23%;
+    // -webkit-box-shadow: 10px 10px 0px 2px #000000; 
+    margin-right: 8%;
+}
+
+.aboutPicContainer img {
+    box-shadow: 15px 15px 0px 2px $primaryColorDarker;
+}

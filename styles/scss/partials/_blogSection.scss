@@ -1,0 +1,164 @@
+.blogHeaderPicSection {
+   height: 35vh;
+   background-image: url(../assets/blog-image-1.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+main {
+   background-color: $whiteShade;
+   padding-top: 60px;
+}
+
+.blogMainSection h2 {
+   transform: translateY(-90px);
+}
+
+aside {
+   background-color: white;
+   padding: 35px;
+   margin-bottom: 25px;
+   a {
+      font-family: $ff-body;
+      color: $primaryColorDarker;
+      
+      &:hover, &:active {
+         color: $accentColor;
+      }
+   }
+
+   ul {
+      padding-left: 30px;
+   }
+
+   li {
+      text-transform: capitalize;
+      list-style-type: disc;
+      padding-left: 10px;
+      &:hover a {
+         color: $accentColor;
+      }
+   }
+}
+
+.asideContainer {
+   width: 33%;
+   margin-right: 5%;
+}
+
+.asideContainer.flexContainer {
+   flex-direction: column;
+}
+
+.asidePicContainer {
+   margin-bottom: 20px;
+}
+
+.asideTextContainer li:first-of-type {
+   margin-top: 20px;
+}
+
+.mainBlogSection {
+   width: 60%;
+}
+
+.blogPost, .commentContainer {
+   background-color: white;
+   padding: 35px;
+}
+
+.blogPost {
+   margin-bottom: 30px;
+   border-bottom: 5px solid $primaryColorDarker;
+   p:last-of-type {
+      margin-bottom: 40px;
+   }
+}
+
+// COMMENT BOXES
+
+.commentContainer {
+   margin-bottom: 20px;
+   p {
+      margin: 5px 0;
+   }
+}
+
+.commentContainer2 {
+   border-bottom: 5px solid $primaryColorDarker;
+   margin-bottom: 30px;
+}
+
+.commentPicContainer {
+   padding-right: 20px;
+   padding-top: 5px;
+
+}
+
+// FORM STYLES
+
+form {
+   display: grid;
+   grid-template-areas: "name email"
+                        "message message"
+                        "button button";
+   grid-gap: 15px;
+   margin-bottom: 100px;
+
+   button {
+      margin: 0;
+      grid-area: button;
+   }
+}
+
+textarea {
+   resize: none;
+   grid-area: message;
+}
+
+input, textarea {
+   padding: 30px;
+   border: none;
+}
+
+input[type=text] {
+   grid-area: name;
+}
+
+input[type=email] {
+   grid-area: email;
+}
+
+@media (max-width: 920px) {
+   .mainFlexContainer {
+      flex-direction: column;
+   }
+
+   .asideContainer, .mainBlogSection {
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   .asideContainer.flexContainer {
+      order: 1;
+      aside {
+         width: 50%;
+         margin: 0 auto;
+         margin-bottom: 30px;
+      }
+   }
+
+   form {
+      margin-bottom: 50px;
+   }
+}
+
+@media (max-width: 685px) {
+   .wrapper {
+      width: 90%;
+   }
+
+   .asideContainer.flexContainer aside {
+      width: 70%;
+   }
+}

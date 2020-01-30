@@ -1,0 +1,51 @@
+header {
+    background-color: $primaryColorLighter;
+    line-height: 0;
+}
+
+.hero {
+    align-items: center;
+}
+
+.headerPicContainer {
+    box-shadow: 18px 22px white;
+    margin-left: 8%;
+    flex: 1 0 32%;
+    position: relative;
+    top: 50px;
+}
+
+.headerText {
+    margin: 0 8%;
+    flex: 0 3 50%;
+    position: relative;
+}
+
+.headerText img {
+    position: absolute;
+    width: 27%;
+    right: 50px;
+    top: -107px;
+}
+
+@media (max-width: 1200px) {
+    .headerText img {
+        width: 25%;
+        // right: 67px;
+        left: 294px;
+        top: -91px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .headerText img {
+        left: 266px;
+        top: -84px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .headerText img {
+        display: none;
+    }
+}

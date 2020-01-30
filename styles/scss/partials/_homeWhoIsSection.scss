@@ -1,0 +1,21 @@
+.whoIsSection {
+    background-color: $whiteShade;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.whoIsTextContainer {
+
+    justify-content: flex-end;
+}
+
+.whoIsText {
+    max-width: 618px;
+    padding-right: 30px;
+}
+
+@media (max-width: 1200px) {
+    .whoIsText {
+        width: 52%;
+    }
+}

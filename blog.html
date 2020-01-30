@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Harper's Blog</title>
+   <link rel="stylesheet" href="./styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/33241c2ec5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <ul class="flexContainer nav">
+            <li>
+               <a href="#home">Home</a>
+            </li>
+            <li>
+               <a href="#about">About</a>
+            </li>
+            <li>
+               <h3>Harper</h3>
+            </li>
+            <li>
+               <a href="#blog">Blog</a>
+            </li>
+            <li>
+               <a href="#contact">Contact</a>
+            </li>
+         </ul>
+      </nav>
+      <section class="blogHeaderPicSection"></section>
+   </header>
+
+   <main>
+      <section class="blogMainSection wrapper">
+         <h2>Blog</h2>
+         <div class="flexContainer mainFlexContainer">
+            <div class="asideContainer flexContainer">
+               <aside>
+                  <div class="asidePicContainer">
+                     <img src="./assets/blog-image-2.jpg" alt="A woman posing on the floor, looking up.">
+                  </div>
+                  <div class="asideTextContainer">
+                     <h6>About Harper</h6>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam labore natus nesciunt.<a
+                           href="#index.html"> Find out more.</a></p>
+                  </div>
+               </aside>
+               <aside>
+                  <div class="asideTextContainer">
+                     <h6>Recent posts</h6>
+                     <ul>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                     </ul>
+                  </div>
+               </aside>
+            </div>
+            <!--/.asideContainer-->
+            <div class="mainBlogSection">
+               <div class="blogPost">
+                  <h5>My favourite travel destinations</h5>
+                  <p>Monday October 8th, 2018 by Harper</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quas quam dolore nulla vero cum!
+                     Lorem
+                     ipsum dolor sit amet.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam harum amet voluptates! Soluta
+                     dolorem
+                     fuga, maiores quam nesciunt labore. Ipsa rerum aut explicabo voluptates a, quod ducimus?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum, accusamus distinctio nemo
+                     autem
+                     unde facere recusandae iste eveniet asperiores, iusto veniam natus! Expedita possimus laboriosam
+                     voluptatem consectetur autem. Corrupti, voluptatibus. Consequatur, doloremque quos, eos, numquam
+                     laudantium voluptatibus architecto repudiandae ipsa deserunt maiores molestiae delectus atque
+                     doloribus
+                     neque accusantium exercitationem.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus accusamus vero commodi rem
+                     inventore,
+                     exercitationem unde suscipit molestiae corrupti consequuntur.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consectetur soluta adipisci. Vel
+                     iusto
+                     impedit nostrum sunt fugit recusandae consectetur quod voluptatibus harum. Reiciendis qui quod amet
+                     at
+                     sapiente ut.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum numquam totam esse, consequatur
+                     natus
+                     debitis repudiandae dolorem, amet nihil fuga reprehenderit, cupiditate praesentium? Fugiat
+                     voluptatum
+                     explicabo debitis animi, maxime, numquam, recusandae nihil doloremque maiores tempore reprehenderit
+                     aliquid voluptas? Esse ipsum laborum eum et assumenda quos sapiente officia ducimus, dolor beatae
+                     ut
+                     velit quae. Cumque eius eum officia modi aliquid aperiam!</p>
+               </div>
+               <div class="commentContainer flexContainer">
+                  <div class="commentPicContainer">
+                     <img src="./assets/blog-image-3.jpg" alt="A woman with short, black hair.">
+                  </div>
+                  <div class="commentTextContainer">
+                     <p>Tuesday October 9th, 2018 by Maggie</p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt aliquid? Iusto
+                        error
+                        eveniet facilis quas dolore, tempora accusamus ipsam?</p>
+                  </div>
+               </div>
+               <!--/.commentContainer-->
+               <div class="commentContainer commentContainer2 flexContainer">
+                  <div class="commentPicContainer">
+                     <img src="./assets/blog-image-4.jpg" alt="A woman with short, blue hair.">
+                  </div>
+                  <div class="commentTextContainer">
+                     <p>Wednesday October 10th, 2018 by Daisy</p>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt aliquid? Iusto
+                        error
+                        eveniet
+                        facilis quas dolore, tempora accusamus ipsam?</p>
+                  </div>
+                  <!-- /.commentTextContainer -->
+               </div>
+               <!--/.commentContainer-->
+               <form>
+                  <input type="text" id="name" placeholder="Name">
+                  <label for="name" class="visuallyhidden">Name</label>
+
+                  <input type="email" id="email" placeholder="Email address">
+                  <label for="email" class="visuallyhidden">Email address</label>
+
+                  <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                  <label for="comment" class="visuallyhidden">Comment</label>
+
+                  <button>Post comment</button>
+               </form>
+            </div>
+            <!-- ./mainBlogSection -->
+         </div>
+         <!-- close main flexContainer -->
+
+      </section>
+   </main>
+   <footer>
+      <p>Copyright &copy; 2018 HackerYou</p>
+   </footer>
+</body>
+
+</html>

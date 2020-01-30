@@ -1,0 +1,28 @@
+.infoSection {
+    background-color: $whiteShade;
+    padding: 100px 0;
+}
+
+.infoSectionContainer {
+    flex-wrap: wrap;
+}
+
+.infoCardContainer {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.iconContainer {
+    padding: 0 20px;
+}
+
+.iconContainer i {
+    font-size: 2rem;
+    background: $primaryColorLighter;
+    border-radius: 50%;
+    padding: 14px 10px 12px 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
