@@ -672,18 +672,21 @@ aside a:hover, aside a:active {
   color: #F38D8D;
 }
 
-aside ul {
-  padding-left: 30px;
-}
-
 aside li {
   text-transform: capitalize;
-  list-style-type: disc;
-  padding-left: 10px;
 }
 
 aside li:hover a {
   color: #F38D8D;
+}
+
+.asideTextContainer ul {
+  padding-left: 30px;
+}
+
+.asideTextContainer ul li {
+  list-style-type: disc;
+  padding-left: 10px;
 }
 
 .asideContainer {
@@ -740,6 +743,15 @@ aside li:hover a {
 .commentPicContainer {
   padding-right: 20px;
   padding-top: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+.commentTextContainer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 80%;
+          flex: 0 2 80%;
 }
 
 form {
@@ -783,8 +795,21 @@ input[type=email] {
   grid-area: email;
 }
 
+@media (max-width: 1100px) {
+  .commentPicContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+  .commentTextContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 2 75%;
+            flex: 0 2 75%;
+  }
+}
+
 @media (max-width: 920px) {
-  .mainFlexContainer {
+  .mainBlogContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -800,9 +825,19 @@ input[type=email] {
             order: 1;
   }
   .asideContainer.flexContainer aside {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+  .commentPicContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+  }
+  .commentTextContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 2 80%;
+            flex: 0 2 80%;
   }
   form {
     margin-bottom: 50px;
@@ -814,6 +849,89 @@ input[type=email] {
     width: 90%;
   }
   .asideContainer.flexContainer aside {
-    width: 70%;
+    width: 80%;
   }
+  .commentPicContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+  }
+  .commentTextContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+  }
+}
+
+@media (max-width: 570px) {
+  .commentPicContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+  form {
+        grid-template-areas: "name" "email" "message" "button";
+  }
+  .asideContainer.flexContainer aside {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .commentPicContainer {
+    display: none;
+  }
+  .commentTextContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.contactHeaderPicSection {
+  height: 35vh;
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contactMainSection h2 {
+  -webkit-transform: translateY(-85px);
+          transform: translateY(-85px);
+}
+
+.mainContactContainer {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContactContainer a[href^="mailto"] {
+  color: #171717;
+  font-size: 2.1rem;
+  font-family: "Oswald", sans-serif;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.mainContactContainer aside {
+  margin-right: 30px;
+  padding: 45px;
+}
+
+.mainContactContainer aside p {
+  margin: -1px 0;
+}
+
+.mainContactContainer li {
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.mainContactContainer li a {
+  font-size: 2.5rem;
+}
+
+form {
+  width: 70%;
 }
