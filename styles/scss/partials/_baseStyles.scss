@@ -89,7 +89,7 @@ img {
    object-fit: cover;
 }
 
-.skip-link {
+.skipLink {
    position: absolute;
    left: -1000px;
    top: 70px;
@@ -100,7 +100,7 @@ img {
    font-size: 1.8rem;
 }
 
-.skip-link:focus {
+.skipLink:focus {
    left: 0;
 }
 

@@ -21,8 +21,10 @@
    }
 
    aside {
-      margin-right: 30px;
-      padding: 30px;
+      // margin-right: 30px;
+      // padding: 45px;
+      margin-right: 3%;
+      width: 27%;
       p {
       margin: -1px 0;
       }
@@ -35,11 +37,12 @@
          font-size: 2.5rem;
       }
    }
+
+   form {
+      width: 70%;
+   }
 }
 
-form {
-   width: 70%;
-}
 
 
 // MEDIA QUERIES
@@ -50,18 +53,21 @@ form {
    }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
+   // era 920px
    .mainContactContainer {
       flex-direction: column;
       aside {
          order: 1;
          margin: 0 auto 50px;
+         width: 40%;
          padding: 50px;
       }
-   }
 
-   form {
-      width: 100%;
+      form {
+         width: 100%;
+         margin-bottom: 50px;
+      }
    }
 }
 

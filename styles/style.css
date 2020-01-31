@@ -329,7 +329,7 @@ img {
      object-fit: cover;
 }
 
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 70px;
@@ -340,7 +340,7 @@ img {
   font-size: 1.8rem;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
 
@@ -528,6 +528,7 @@ header {
       grid-template-columns: 1fr 31% 4% 20px 4% 31% 1fr;
   -ms-grid-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
       grid-template-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
+  background: white;
 }
 
 .leftPic {
@@ -625,6 +626,7 @@ header {
 
 .gallerySection {
   padding: 100px 0;
+  background: white;
 }
 
 .galleryContainer {
@@ -921,8 +923,8 @@ input[type=email] {
 }
 
 .mainContactContainer aside {
-  margin-right: 30px;
-  padding: 30px;
+  margin-right: 3%;
+  width: 27%;
 }
 
 .mainContactContainer aside p {
@@ -938,7 +940,7 @@ input[type=email] {
   font-size: 2.5rem;
 }
 
-form {
+.mainContactContainer form {
   width: 70%;
 }
 
@@ -948,7 +950,7 @@ form {
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   .mainContactContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -960,10 +962,12 @@ form {
         -ms-flex-order: 1;
             order: 1;
     margin: 0 auto 50px;
+    width: 40%;
     padding: 50px;
   }
-  form {
+  .mainContactContainer form {
     width: 100%;
+    margin-bottom: 50px;
   }
 }
 
