@@ -10,12 +10,29 @@
 }
 
 .whoIsText {
-    max-width: 618px;
-    padding-right: 30px;
+    // width: 618px;
+    width: 50%;
+    // padding-right: 30px;
 }
 
 @media (max-width: 1200px) {
     .whoIsText {
         width: 52%;
+    }
+}
+
+@media (max-width: 850px) {
+    .whoIsTextContainer {
+        justify-content: center;
+    }
+    
+    .whoIsText {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .whoIsSection {
+        padding-bottom: $padding-sm;
     }
 }

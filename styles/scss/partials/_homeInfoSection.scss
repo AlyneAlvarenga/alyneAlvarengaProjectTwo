@@ -26,3 +26,24 @@
     text-align: center;
     align-items: center;
 }
+
+@media (max-width: 700px) {
+    .infoSection {
+        padding: $padding-sm 0;
+    }
+
+    .infoSectionContainer {
+        justify-content: center;
+    }
+    
+    .infoCardContainer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .iconContainer {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+}

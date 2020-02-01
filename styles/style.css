@@ -387,6 +387,9 @@ img {
   h2 {
     font-size: 5.4rem;
   }
+  h3 {
+    font-size: 3.5rem;
+  }
 }
 
 nav {
@@ -525,7 +528,7 @@ header {
     margin: 40px 0 8px 0;
   }
   .headerText {
-    position: fixed;
+    position: absolute;
     top: 80px;
   }
 }
@@ -555,13 +558,29 @@ header {
 }
 
 .whoIsText {
-  max-width: 618px;
-  padding-right: 30px;
+  width: 50%;
 }
 
 @media (max-width: 1200px) {
   .whoIsText {
     width: 52%;
+  }
+}
+
+@media (max-width: 850px) {
+  .whoIsTextContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .whoIsText {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .whoIsSection {
+    padding-bottom: 50px;
   }
 }
 
@@ -571,6 +590,12 @@ header {
   background-image: url(../assets/home-image-2.jpg);
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 700px) {
+  .pictureSection {
+    max-height: 250px;
+  }
 }
 
 .infoSection {
@@ -603,6 +628,27 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 700px) {
+  .infoSection {
+    padding: 50px 0;
+  }
+  .infoSectionContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .infoCardContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .iconContainer {
+    padding-left: 0;
+    padding-right: 15px;
+  }
 }
 
 .blogSection {

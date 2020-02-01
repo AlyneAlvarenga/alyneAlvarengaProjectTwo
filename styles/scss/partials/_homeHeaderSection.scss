@@ -31,7 +31,6 @@ header {
 @media (max-width: 1200px) {
    .headerText img {
       width: 25%;
-      // right: 67px;
       left: 294px;
       top: -91px;
    }
@@ -67,7 +66,7 @@ header {
    }
 
    .headerText {
-      position: fixed;
+      position: absolute;
       top: 80px;
    }
 }
