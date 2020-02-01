@@ -132,6 +132,18 @@ img {
    }
 }
 
+@media (max-width: 850px) {
+   h1 {
+      font-size: 8.5rem;
+   }
+}
+
+@media (max-width: 620px) {
+   h1 {
+      font-size: 6.5rem;
+   }
+}
+
 @media (max-width: 455px) {
    h2 {
       font-size: 5.4rem;
