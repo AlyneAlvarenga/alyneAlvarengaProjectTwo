@@ -8,10 +8,53 @@
 
 .aboutPicContainer {
     flex: 0 0 23%;
-    // -webkit-box-shadow: 10px 10px 0px 2px #000000; 
     margin-right: 8%;
 }
 
 .aboutPicContainer img {
     box-shadow: 15px 15px 0px 2px $primaryColorDarker;
+}
+
+@media (max-width: 1000px) {
+    .aboutPicContainer {
+        flex: 0 0 28%;
+    }
+}
+
+@media (max-width: 850px) {
+    .aboutPicContainer {
+        flex: 0 0 32%;
+    }
+}
+
+@media (max-width: 770px) {
+    .aboutSection {
+        padding: $padding-sm 0;
+        
+        .flexContainer {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+    .aboutPicContainer {
+        width: 35%;
+        margin: 0 0 50px;
+    }
+
+    .aboutTextContainer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .aboutPicContainer {
+        width: 40%;
+    }
+}
+
+@media (max-width: 470px) {
+    .aboutPicContainer {
+        width: 55%;
+    }
 }
