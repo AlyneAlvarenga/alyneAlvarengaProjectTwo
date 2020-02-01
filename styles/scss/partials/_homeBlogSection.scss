@@ -1,6 +1,7 @@
 .blogSection {
     display: grid;
-    grid-template-columns: 1fr 31% 4% 20px 4% 31% 1fr;
+    // grid-template-columns: 1fr 31% 4% 20px 4% 31% 1fr;
+    grid-template-columns: 1fr 33% 6% 20px 6% 33% 1fr;
     grid-template-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
     background: white;
 }
@@ -28,6 +29,11 @@
     grid-column: 2 / 3;
     grid-row: 7 / 9;
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    button {
+        align-self: flex-end;
+    }
 }
 
 .rightPic {

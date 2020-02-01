@@ -95,7 +95,8 @@ img {
    top: 70px;
    z-index: 999;
    background: var(--background);
-   color: white;
+   color: black;
+   background-color: $primaryColor;
    padding: 15px;
    font-size: 1.8rem;
 }

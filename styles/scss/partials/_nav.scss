@@ -17,4 +17,32 @@ ul.nav {
     }
 }
     
+.hamburgerMenu {
+    display: none;
+    button {
+        background: transparent;
+    }
+}
 
+@media (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        text-align: right;
+        // position: sticky;
+        // top: 10px;
+        button {
+            transition: none;
+        }
+        i {
+            color: $whiteShade;
+            background-color: $primaryColor;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 2.5rem;
+        }
+    }
+}

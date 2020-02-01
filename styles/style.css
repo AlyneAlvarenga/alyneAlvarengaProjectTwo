@@ -335,7 +335,8 @@ img {
   top: 70px;
   z-index: 999;
   background: var(--background);
-  color: white;
+  color: black;
+  background-color: #68B0C1;
   padding: 15px;
   font-size: 1.8rem;
 }
@@ -400,6 +401,35 @@ ul.nav li:nth-of-type(3) {
   padding: 0 40px;
 }
 
+.hamburgerMenu {
+  display: none;
+}
+
+.hamburgerMenu button {
+  background: transparent;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+    text-align: right;
+  }
+  .hamburgerMenu button {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .hamburgerMenu i {
+    color: #F6F6F6;
+    background-color: #68B0C1;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 2.5rem;
+  }
+}
+
 header {
   background-color: #B9DDE7;
   line-height: 0;
@@ -460,8 +490,8 @@ header {
 
 .whoIsSection {
   background-color: #F6F6F6;
-  padding-top: 100px;
-  padding-bottom: 110px;
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
 
 .whoIsTextContainer {
@@ -524,8 +554,8 @@ header {
 .blogSection {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 31% 4% 20px 4% 31% 1fr;
-      grid-template-columns: 1fr 31% 4% 20px 4% 31% 1fr;
+  -ms-grid-columns: 1fr 33% 6% 20px 6% 33% 1fr;
+      grid-template-columns: 1fr 33% 6% 20px 6% 33% 1fr;
   -ms-grid-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
       grid-template-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
   background: white;
@@ -572,6 +602,18 @@ header {
   -ms-grid-row-span: 2;
   grid-row: 7 / 9;
   padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftText button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .rightPic {
@@ -605,7 +647,7 @@ header {
 
 .aboutSection {
   background-color: #F6F6F6;
-  padding: 120px 0 100px;
+  padding: 140px 0 100px;
 }
 
 .aboutSection h3 {
