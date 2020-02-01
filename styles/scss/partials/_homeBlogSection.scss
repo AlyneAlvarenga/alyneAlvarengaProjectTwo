@@ -1,7 +1,8 @@
 .blogSection {
     display: grid;
-    // grid-template-columns: 1fr 31% 4% 20px 4% 31% 1fr;
-    grid-template-columns: 1fr 33% 6% 20px 6% 33% 1fr;
+    // grid-template-columns: 1fr 31% 4% 20px 4% 31% 1fr; one option
+    // grid-template-columns: 1fr 33% 6% 20px 6% 33% 1fr; second option
+    grid-template-columns: 1fr 38% 6% 20px 6% 38% 1fr;
     grid-template-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
     background: white;
 }
@@ -31,6 +32,7 @@
     padding-top: 40px;
     display: flex;
     flex-direction: column;
+    transform: translate(0, 20px);
     button {
         align-self: flex-end;
     }
@@ -53,4 +55,100 @@
 .blogPicContainer {
     position: relative;
     z-index: 5;
+}
+
+@media (max-width: 1270px) {
+    .rightText {
+        transform: translateY(-30px);
+    }
+}
+
+@media (max-width: 1120px) {
+    .blogSection {
+        grid-template-columns: 1fr 42% 4% 20px 4% 42% 1fr;
+        
+    }
+}
+
+@media (max-width: 1060px) {
+    .blogSection {
+        grid-template-columns: 1fr 55% 20px 2fr;
+        grid-template-rows: [startPic1] 20px [startSection1] 300px [endPic1] 60px [endSection1] 30px [startSection2] 300px [endSection2] 5px [startPic2] 20px [startSection3] 300px [endPic2] 60px [endSection3] 30px [startSection4] 300px [endSection4] 50px;
+    }
+
+    .leftPic {
+        grid-column: 2 / 3;
+        grid-row: startPic1 / endPic1;
+    }
+
+    .background1 {
+        grid-column: 1 / 4;
+        grid-row: startSection1 / endSection1;
+    }
+
+    .rightText {
+        grid-column: 2 / 3;
+        grid-row: startSection2 / endSection2;
+    }
+
+    .background2 {
+        grid-column: 1 / 4;
+        grid-row: startSection3 / endSection3;
+        transform: translate(0);
+    }
+
+    .rightPic {
+        grid-column: 2 / 3;
+        grid-row: startPic2 / endPic2;
+        transform: translate(0);
+    }
+
+    .leftText {
+        display: block;
+        grid-column: 2 / 3;
+        grid-row: startSection4 / endSection4;
+        transform: translate(0);
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .blogSection {
+        grid-template-columns: 1fr 60% 20px 1fr;
+    }
+}
+
+@media (max-width: 870px) {
+    .blogSection {
+        grid-template-columns: 1fr 66% 20px 1fr;
+    }
+}
+
+@media (max-width: 770px) {
+    .blogSection {
+        grid-template-columns: 1fr 76% 20px 1fr;
+    }
+}
+
+@media (max-width: 680px) {
+    .blogSection {
+        display: block;
+        padding: $padding-sm 0;
+    }
+
+    .blogTextContainer {
+        width: 85%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .background1, .background2 {
+        display: none;
+    }
+
+    .blogPicContainer {
+        // position: static;
+        // max-height: 100px;
+        display: none;
+    }
 }
