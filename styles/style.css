@@ -638,7 +638,7 @@ header {
 .pictureSection {
   height: 50vh;
   max-height: 550px;
-  background-image: url(../assets/home-image-2.jpg);
+  background-image: url(../assets/homeImage2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1030,7 +1030,7 @@ footer p {
 
 .blogSectionHeader {
   height: 45vh;
-  background-image: url(../assets/blog-image-1.jpg);
+  background-image: url(../assets/blogImage1.jpg);
   background-size: cover;
   background-position: bottom left;
 }
@@ -1293,7 +1293,7 @@ input[type=email] {
 
 .contactSectionHeader {
   height: 45vh;
-  background-image: url(../assets/contact-image-1.jpg);
+  background-image: url(../assets/contactImage1.jpg);
   background-size: cover;
   background-position: center;
 }
