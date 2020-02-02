@@ -1,8 +1,8 @@
-.blogHeaderPicSection {
-   height: 35vh;
+.blogSectionHeader {
+   height: 45vh;
    background-image: url(../assets/blog-image-1.jpg);
    background-size: cover;
-   background-position: center;
+   background-position: bottom left;
 }
 
 // main styles cascade to contact section
@@ -153,6 +153,10 @@ input[type=email] {
 }
 
 @media (max-width: 920px) {
+   .blogSectionHeader {
+      background-position: center;
+   }
+   
    .mainBlogContainer {
       flex-direction: column;
    }
@@ -181,6 +185,12 @@ input[type=email] {
 
    form {
       margin-bottom: 50px;
+   }
+}
+
+@media (max-width: 800px) {
+   .blogSectionHeader {
+      height: 30vh;
    }
 }
 
@@ -223,5 +233,11 @@ input[type=email] {
 
    .commentTextContainer {
       flex: 0 0 100%;
+   }
+}
+
+@media (max-width: 409px) {
+   .hamburgerMenu button {
+      padding: 20px;
    }
 }

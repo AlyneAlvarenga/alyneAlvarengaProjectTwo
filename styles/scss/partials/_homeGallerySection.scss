@@ -10,3 +10,20 @@
 .galleryContainer:last-of-type {
     margin-right: 0;
 }
+
+@media (max-width: 700px) {
+    .gallerySection {
+        padding: 0;
+        .galleryContainer:last-of-type {
+            display: none;
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .galleryContainer {
+            margin: 0;
+        }
+    }
+}

@@ -27,11 +27,13 @@ ul.nav {
 @media (max-width: 800px) {
     nav {
         display: none;
+        // background-color: transparent;
     }
 
     .hamburgerMenu {
         display: block;
         text-align: right;
+        background-color: transparent;
         // position: sticky;
         // top: 10px;
         button {
@@ -39,9 +41,9 @@ ul.nav {
         }
         i {
             color: $whiteShade;
-            background-color: $primaryColor;
+            background-color: $primaryColorDarker;
             border-radius: 50%;
-            padding: 10px;
+            padding: 15px;
             font-size: 2.5rem;
         }
     }
