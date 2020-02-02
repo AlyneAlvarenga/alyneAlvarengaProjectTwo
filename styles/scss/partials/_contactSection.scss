@@ -1,5 +1,5 @@
-.contactHeaderPicSection {
-   height: 35vh;
+.contactSectionHeader {
+   height: 45vh;
    background-image: url(../assets/contact-image-1.jpg);
    background-size: cover;
    background-position: center;
@@ -21,8 +21,6 @@
    }
 
    aside {
-      // margin-right: 30px;
-      // padding: 45px;
       margin-right: 3%;
       width: 27%;
       p {
@@ -54,7 +52,6 @@
 }
 
 @media (max-width: 1000px) {
-   // era 920px
    .mainContactContainer {
       flex-direction: column;
       aside {
@@ -71,8 +68,28 @@
    }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 850px) {
    .mainContactContainer aside {
-      padding: 20px;
+      width: 60%;
+      text-align: center;
+      padding: 25px 0;
+      ul {
+         justify-content: center;
+         li:last-of-type {
+            margin-right: 0;
+         }
+      }
+   }
+}
+
+@media (max-width: 800px) {
+   .contactSectionHeader {
+      height: 30vh;
+   }
+}
+
+@media (max-width: 530px) {
+   .mainContactContainer aside {
+      width: 100%;
    }
 }

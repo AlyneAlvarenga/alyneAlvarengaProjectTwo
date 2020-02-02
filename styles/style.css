@@ -383,7 +383,7 @@ img {
   }
 }
 
-@media (max-width: 455px) {
+@media (max-width: 465px) {
   h2 {
     font-size: 5.4rem;
   }
@@ -446,7 +446,7 @@ ul.nav li:nth-of-type(3) {
   }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 480px) {
   .hamburgerMenu button {
     padding: 0;
     margin-right: 10px;
@@ -490,11 +490,25 @@ header {
   top: -107px;
 }
 
+@media (max-width: 1235px) {
+  .headerText img {
+    width: 26%;
+    right: 13px;
+    top: -99px;
+  }
+}
+
+@media (max-width: 1227px) {
+  .headerText img {
+    left: 349px;
+    top: -98px;
+  }
+}
+
 @media (max-width: 1200px) {
   .headerText img {
-    width: 25%;
-    left: 294px;
-    top: -91px;
+    left: 290px;
+    top: -95px;
   }
 }
 
@@ -505,19 +519,41 @@ header {
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 950px) {
   .headerText img {
-    display: none;
+    left: 273px;
+    top: -78px;
   }
 }
 
 @media (max-width: 850px) {
+  .headerText img {
+    left: 231px;
+    top: -69px;
+  }
   .headerPicContainer {
     top: 20px;
   }
 }
 
+@media (max-width: 785px) {
+  .headerText img {
+    left: 233px;
+    top: -65px;
+  }
+}
+
+@media (max-width: 620px) {
+  .headerText img {
+    left: 178px;
+    top: -52px;
+  }
+}
+
 @media (max-width: 510px) {
+  .headerText img {
+    display: none;
+  }
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -534,7 +570,7 @@ header {
   }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 480px) {
   .headerPicContainer {
     margin-top: 60px;
   }
@@ -764,8 +800,8 @@ header {
 
 @media (max-width: 1060px) {
   .blogSection {
-    -ms-grid-columns: 1fr 55% 20px 2fr;
-        grid-template-columns: 1fr 55% 20px 2fr;
+    -ms-grid-columns: 1fr 57% 20px 2fr;
+        grid-template-columns: 1fr 57% 20px 2fr;
     -ms-grid-rows: [startPic1] 20px [startSection1] 300px [endPic1] 60px [endSection1] 30px [startSection2] 300px [endSection2] 5px [startPic2] 20px [startSection3] 300px [endPic2] 60px [endSection3] 30px [startSection4] 300px [endSection4] 50px;
         grid-template-rows: [startPic1] 20px [startSection1] 300px [endPic1] 60px [endSection1] 30px [startSection2] 300px [endSection2] 5px [startPic2] 20px [startSection3] 300px [endPic2] 60px [endSection3] 30px [startSection4] 300px [endSection4] 50px;
   }
@@ -822,21 +858,35 @@ header {
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 900px) {
   .blogSection {
     -ms-grid-columns: 1fr 66% 20px 1fr;
         grid-template-columns: 1fr 66% 20px 1fr;
   }
 }
 
+@media (max-width: 835px) {
+  .blogSection {
+    -ms-grid-columns: 1fr 72% 20px 1fr;
+        grid-template-columns: 1fr 72% 20px 1fr;
+  }
+}
+
 @media (max-width: 770px) {
   .blogSection {
-    -ms-grid-columns: 1fr 76% 20px 1fr;
-        grid-template-columns: 1fr 76% 20px 1fr;
+    -ms-grid-columns: 1fr 78% 20px 1fr;
+        grid-template-columns: 1fr 78% 20px 1fr;
   }
 }
 
 @media (max-width: 680px) {
+  .blogSection {
+    -ms-grid-columns: 1fr 88% 20px 1fr;
+        grid-template-columns: 1fr 88% 20px 1fr;
+  }
+}
+
+@media (max-width: 605px) {
   .blogSection {
     display: block;
     padding: 50px 0;
@@ -1222,13 +1272,13 @@ input[type=email] {
 }
 
 @media (max-width: 409px) {
-  .hamburgerMenu button {
+  .blogSectionHeader .hamburgerMenu button {
     padding: 20px;
   }
 }
 
-.contactHeaderPicSection {
-  height: 35vh;
+.contactSectionHeader {
+  height: 45vh;
   background-image: url(../assets/contact-image-1.jpg);
   background-size: cover;
   background-position: center;
@@ -1302,8 +1352,30 @@ input[type=email] {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 850px) {
   .mainContactContainer aside {
-    padding: 20px;
+    width: 60%;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .mainContactContainer aside ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainContactContainer aside ul li:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .contactSectionHeader {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 530px) {
+  .mainContactContainer aside {
+    width: 100%;
   }
 }

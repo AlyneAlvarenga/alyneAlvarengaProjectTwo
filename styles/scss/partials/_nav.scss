@@ -49,9 +49,16 @@ ul.nav {
     }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 480px) {
     .hamburgerMenu button {
         padding: 0;
         margin-right: 10px;
     }
 }
+
+// @media (max-width: 409px) {
+//     .hamburgerMenu button {
+//         padding: 0;
+//         margin-right: 10px;
+//     }
+// }
