@@ -5,13 +5,14 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Contact me</title>
+   <title>Harper - Contact me</title>
    <link rel="stylesheet" href="./styles/style.css">
    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/33241c2ec5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+   <a href="#mainContent" class="skipLink">Skip to main content.</a>
    <header class="contactSectionHeader">
       <nav>
          <ul class="flexContainer nav">
@@ -32,37 +33,41 @@
             </li>
          </ul>
       </nav>
-      <div class="hamburgerMenu">
+      <div class="hamburgerMenu" tabindex="0" aria-label="Open the navigation menu.">
          <button>
             <i class="fas fa-bars" aria-hidden="true"></i>
          </button>
       </div>
    </header>
 
-   <main>
+   <main id="mainContent">
       <section class="contactMainSection wrapper">
          <h2>Contact me</h2>
          <div class="flexContainer mainContactContainer">
             <aside>
                <ul class="flexContainer">
                   <li>
-                     <a href="">
-                        <i class="fab fa-facebook-f"></i>
+                     <a href="http://www.facebook.com" target="_blank"
+                        aria-label="Facebook icon opens the Facebook home page on a new tab.">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
                      </a>
                   </li>
                   <li>
-                     <a href="">
-                        <i class="fab fa-twitter"></i>
+                     <a href="http://www.twitter.com" target="_blank"
+                        aria-label="Twitter icon opens the Twitter home page on a new tab.">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
                      </a>
                   </li>
                   <li>
-                     <a href="">
-                        <i class="fab fa-linkedin-in"></i>
+                     <a href="http://www.linkedin.com" target="_blank"
+                        aria-label="Linkedin icon opens the Linkedin home page on a new tab.">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                      </a>
                   </li>
                   <li>
-                     <a href="">
-                        <i class="fab fa-instagram"></i>
+                     <a href="http://www.instagram.com" target="_blank"
+                        aria-label="Instagram icon opens the Instagram home page on a new tab.">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
                      </a>
                   </li>
                </ul>

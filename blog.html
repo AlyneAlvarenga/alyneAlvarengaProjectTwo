@@ -5,13 +5,14 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Harper's Blog</title>
+   <title>Harper - Blog</title>
    <link rel="stylesheet" href="./styles/style.css">
    <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/33241c2ec5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+   <a href="#mainContent" class="skipLink">Skip to main content.</a>
    <header class="blogSectionHeader">
       <nav>
          <ul class="flexContainer nav">
@@ -32,14 +33,14 @@
             </li>
          </ul>
       </nav>
-      <div class="hamburgerMenu">
+      <div class="hamburgerMenu" tabindex="0" aria-label="Open the navigation menu.">
          <button>
             <i class="fas fa-bars" aria-hidden="true"></i>
          </button>
       </div>
    </header>
 
-   <main>
+   <main id="mainContent">
       <section class="blogMainSection wrapper">
          <h2>Blog</h2>
          <div class="flexContainer mainBlogContainer">
@@ -51,7 +52,7 @@
                   <div class="asideTextContainer">
                      <h6>About Harper</h6>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam labore natus nesciunt.<a
-                           href="#index.html"> Find out more.</a></p>
+                           href="./index.html"> Find out more.</a></p>
                   </div>
                </aside>
                <aside>

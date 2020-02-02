@@ -300,16 +300,18 @@ button {
   border: 0;
   padding: 15px 35px;
   margin-top: 10px;
-  -webkit-transition: border-radius 500ms, -webkit-transform 500ms;
-  transition: border-radius 500ms, -webkit-transform 500ms;
-  transition: transform 500ms, border-radius 500ms;
-  transition: transform 500ms, border-radius 500ms, -webkit-transform 500ms;
+  -webkit-transition: background-color 500ms, border-radius 500ms;
+  transition: background-color 500ms, border-radius 500ms;
 }
 
 button:hover, button:active {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-  border-radius: 6px;
+  background-color: #227284;
+  border-radius: 10px;
+}
+
+button:focus {
+  -webkit-box-shadow: 0px 0px 0px 5px #68B0C1;
+          box-shadow: 0px 0px 0px 5px #68B0C1;
 }
 
 a {
@@ -320,6 +322,11 @@ a {
 
 a:hover, li:hover a {
   color: #F6F6F6;
+}
+
+a:active, a:focus, input:focus, textarea:focus {
+  -webkit-box-shadow: 0px 0px 0px 5px #F38D8D;
+          box-shadow: 0px 0px 0px 5px #F38D8D;
 }
 
 img {
