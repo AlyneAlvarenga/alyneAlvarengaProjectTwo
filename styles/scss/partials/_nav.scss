@@ -24,6 +24,33 @@ ul.nav {
    }
 }
 
+.mobileNav {
+   opacity: 0;
+   position: fixed;
+   right: -1000px;
+   width: 100%;
+   height: 60%;
+   background-color: $primaryColorDarker;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   li {
+      margin: 2rem 0;
+      color: $whiteShade;
+   }
+   li:hover a, li:focus a {
+      color: $accentColor;
+   }
+}
+
+.open {
+   opacity: 1;
+   z-index: 10;
+   right: 0;
+   top: 0;
+}
+
 @media (max-width: 800px) {
    nav {
       display: none;
@@ -31,10 +58,13 @@ ul.nav {
 
    .hamburgerMenu {
       display: block;
-      text-align: right;
+      position: fixed;
+      right: 1rem;
+      z-index: 15;
       background-color: transparent;
       button {
          transition: none;
+         cursor: pointer;
       }
       i {
          color: $whiteShade;

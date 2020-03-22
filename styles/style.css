@@ -443,18 +443,59 @@ ul.nav li:nth-of-type(3) {
   background: transparent;
 }
 
+.mobileNav {
+  opacity: 0;
+  position: fixed;
+  right: -1000px;
+  width: 100%;
+  height: 60%;
+  background-color: #227284;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobileNav li {
+  margin: 2rem 0;
+  color: #F6F6F6;
+}
+
+.mobileNav li:hover a, .mobileNav li:focus a {
+  color: #F38D8D;
+}
+
+.open {
+  opacity: 1;
+  z-index: 10;
+  right: 0;
+  top: 0;
+}
+
 @media (max-width: 800px) {
   nav {
     display: none;
   }
   .hamburgerMenu {
     display: block;
-    text-align: right;
+    position: fixed;
+    right: 1rem;
+    z-index: 15;
     background-color: transparent;
   }
   .hamburgerMenu button {
     -webkit-transition: none;
     transition: none;
+    cursor: pointer;
   }
   .hamburgerMenu i {
     color: #F6F6F6;
@@ -832,6 +873,12 @@ header {
           box-shadow: 15px 15px 0px 2px #227284;
 }
 
+@media (max-width: 1090px) {
+  .aboutSection {
+    padding: 100px 0;
+  }
+}
+
 @media (max-width: 1000px) {
   .aboutPicContainer {
     -webkit-box-flex: 0;
@@ -849,9 +896,6 @@ header {
 }
 
 @media (max-width: 770px) {
-  .aboutSection {
-    padding: 50px 0;
-  }
   .aboutSection .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
