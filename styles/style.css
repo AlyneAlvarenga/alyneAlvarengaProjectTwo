@@ -395,7 +395,7 @@ img {
     font-size: 6rem;
   }
   h2 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   h3 {
     font-size: 3.5rem;
@@ -405,9 +405,6 @@ img {
 @media (max-width: 390px) {
   h1 {
     font-size: 4.5rem;
-  }
-  h2 {
-    font-size: 4rem;
   }
 }
 
@@ -436,7 +433,7 @@ ul.nav li:nth-of-type(3) {
 }
 
 .hamburgerMenu {
-  display: none;
+  opacity: 0;
 }
 
 .hamburgerMenu button {
@@ -486,13 +483,15 @@ ul.nav li:nth-of-type(3) {
     display: none;
   }
   .hamburgerMenu {
-    display: block;
+    opacity: 1;
     position: fixed;
-    right: 1rem;
+    top: 1rem;
+    right: 2rem;
     z-index: 15;
     background-color: transparent;
   }
   .hamburgerMenu button {
+    padding: 0;
     -webkit-transition: none;
     transition: none;
     cursor: pointer;
@@ -503,13 +502,6 @@ ul.nav li:nth-of-type(3) {
     border-radius: 50%;
     padding: 15px;
     font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hamburgerMenu button {
-    padding: 0;
-    margin-right: 10px;
   }
 }
 
@@ -596,12 +588,29 @@ header {
 }
 
 @media (max-width: 800px) {
+  header {
+    min-height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .headerText img {
     max-width: 7rem;
     right: -2.5rem;
     top: -5.5rem;
   }
   .hero {
+    margin-top: 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -609,24 +618,34 @@ header {
   }
   .headerPicContainer {
     width: 40%;
+    max-width: 40%;
     margin: 40px 0 8px 0;
   }
   .headerText {
     margin: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 3 50%;
+            flex: 0 3 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 660px) {
+  .headerPicContainer {
+    width: 50%;
     max-width: 50%;
   }
 }
 
 @media (max-width: 505px) {
+  header {
+    min-height: 70vh;
+  }
   .headerText img {
     display: none;
   }
   .hideText {
     display: block;
-  }
-  .headerPicContainer {
-    width: 60%;
-    margin: 20px 0 8px 0;
   }
 }
 
@@ -1153,9 +1172,22 @@ input[type=email] {
             order: 1;
   }
   .asideContainer.flexContainer aside {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 30px;
+  }
+  .asideContainer.flexContainer aside .asideTextContainer {
+    max-width: 50%;
+    margin-left: 2rem;
   }
   .commentPicContainer {
     -webkit-box-flex: 0;
@@ -1175,15 +1207,13 @@ input[type=email] {
 @media (max-width: 800px) {
   .blogSectionHeader {
     height: 30vh;
+    min-height: 30vh;
   }
 }
 
 @media (max-width: 685px) {
   .wrapper {
     width: 90%;
-  }
-  .asideContainer.flexContainer aside {
-    width: 80%;
   }
   .commentPicContainer {
     -webkit-box-flex: 0;
@@ -1195,6 +1225,15 @@ input[type=email] {
         -ms-flex: 0 1 70%;
             flex: 0 1 70%;
   }
+  .asideContainer.flexContainer aside {
+    padding: 2rem 0;
+  }
+  .asideContainer.flexContainer .asideTextContainer.recentPosts {
+    text-align: center;
+    width: 80%;
+    max-width: 80%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 570px) {
@@ -1205,9 +1244,6 @@ input[type=email] {
   }
   form {
         grid-template-areas: "name" "email" "message" "button";
-  }
-  .asideContainer.flexContainer aside {
-    width: 100%;
   }
 }
 
@@ -1222,9 +1258,14 @@ input[type=email] {
   }
 }
 
-@media (max-width: 409px) {
-  .blogSectionHeader .hamburgerMenu button {
-    padding: 20px;
+@media (max-width: 475px) {
+  .asidePicContainer {
+    display: none;
+  }
+  .asideContainer.flexContainer aside .asideTextContainer {
+    text-align: center;
+    width: 80%;
+    max-width: 80%;
   }
 }
 

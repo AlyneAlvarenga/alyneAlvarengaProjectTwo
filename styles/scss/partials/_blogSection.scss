@@ -169,9 +169,17 @@ input[type=email] {
    .asideContainer.flexContainer {
       order: 1;
       aside {
-         width: 60%;
+         width: 100%;
          margin: 0 auto;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
          margin-bottom: 30px;
+
+         .asideTextContainer {
+            max-width: 50%;
+            margin-left: 2rem;
+         }
       }
    }
 
@@ -191,6 +199,7 @@ input[type=email] {
 @media (max-width: 800px) {
    .blogSectionHeader {
       height: 30vh;
+      min-height: 30vh;
    }
 }
 
@@ -199,16 +208,23 @@ input[type=email] {
       width: 90%;
    }
 
-   .asideContainer.flexContainer aside {
-      width: 80%;
-   }
-
    .commentPicContainer {
       flex: 0 0 20%
    }
 
    .commentTextContainer {
       flex: 0 1 70%;
+   }
+
+   .asideContainer.flexContainer aside {
+      padding: 2rem 0;
+   }
+
+   .asideContainer.flexContainer .asideTextContainer.recentPosts {
+      text-align: center;
+      width: 80%;
+      max-width: 80%;
+      margin: 0;
    }
 }
 
@@ -219,10 +235,6 @@ input[type=email] {
 
    form {
       grid-template-areas: "name" "email" "message" "button";
-   }
-
-   .asideContainer.flexContainer aside {
-      width: 100%;
    }
 }
 
@@ -236,8 +248,14 @@ input[type=email] {
    }
 }
 
-@media (max-width: 409px) {
-   .blogSectionHeader .hamburgerMenu button {
-      padding: 20px;
+@media (max-width: 475px) {
+   .asidePicContainer {
+      display: none;
+   }
+
+   .asideContainer.flexContainer aside .asideTextContainer {
+      text-align: center;
+      width: 80%;
+      max-width: 80%;
    }
 }

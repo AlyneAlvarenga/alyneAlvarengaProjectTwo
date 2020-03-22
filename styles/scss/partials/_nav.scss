@@ -18,7 +18,7 @@ ul.nav {
 }
    
 .hamburgerMenu {
-   display: none;
+   opacity: 0;
    button {
       background: transparent;
    }
@@ -57,12 +57,14 @@ ul.nav {
    }
 
    .hamburgerMenu {
-      display: block;
+      opacity: 1;
       position: fixed;
-      right: 1rem;
+      top: 1rem;
+      right: 2rem;
       z-index: 15;
       background-color: transparent;
       button {
+         padding: 0;
          transition: none;
          cursor: pointer;
       }
@@ -76,9 +78,9 @@ ul.nav {
    }
 }
 
-@media (max-width: 480px) {
-   .hamburgerMenu button {
-      padding: 0;
-      margin-right: 10px;
-   }
-}
+// @media (max-width: 480px) {
+//    .hamburgerMenu button {
+//       padding: 0;
+//       margin-right: 10px;
+//    }
+// }

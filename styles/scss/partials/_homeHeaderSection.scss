@@ -73,6 +73,14 @@ header {
 }
 
 @media (max-width: 800px) {
+   header {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
    .headerText img {
       max-width: 7rem;
       right: -2.5rem;
@@ -80,31 +88,40 @@ header {
    }
 
    .hero {
+      margin-top: 2rem;
       flex-direction: column-reverse;
    }
 
    .headerPicContainer {
       width: 40%;
+      max-width: 40%;
       margin: 40px 0 8px 0;
    }
 
    .headerText {
       margin: 0;
+      flex: 0 3 50%;
+      max-width: 50%;
+   }
+}
+
+@media (max-width: 660px) {
+   .headerPicContainer {
+      width: 50%;
       max-width: 50%;
    }
 }
 
 @media (max-width: 505px) {
+   header {
+      min-height: 70vh;
+   }
+   
    .headerText img {
       display: none;
    }
 
    .hideText {
       display: block;
-   }
-
-   .headerPicContainer {
-      width: 60%;
-      margin: 20px 0 8px 0;
    }
 }
