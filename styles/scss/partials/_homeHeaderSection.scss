@@ -10,10 +10,8 @@ header {
 
 .headerPicContainer {
    box-shadow: 18px 22px white;
-   // margin-left: 8%;
    flex: 1 0 30%;
    max-width: 36%;
-   // flex: 1 2 5rem;
    position: relative;
    top: 50px;
 }
@@ -30,6 +28,15 @@ header {
    right: -4rem;
    top: -13.5rem;
    }
+}
+
+.hideText {
+   display: none;
+   font-size: 1.3rem;
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   transform: translateY(-3.7rem);
 }
 
 // MEDIA QUERIES
@@ -66,12 +73,14 @@ header {
 }
 
 @media (max-width: 800px) {
-   // .headerText img {
-   //    display: none;
-   // }
+   .headerText img {
+      max-width: 7rem;
+      right: -2.5rem;
+      top: -5.5rem;
+   }
 
    .hero {
-      flex-direction: column;
+      flex-direction: column-reverse;
    }
 
    .headerPicContainer {
@@ -80,20 +89,22 @@ header {
    }
 
    .headerText {
-      position: absolute;
-      top: 80px;
       margin: 0;
+      max-width: 50%;
    }
 }
 
-@media (max-width: 480px) {
-   .headerPicContainer {
-      margin-top: 60px;
+@media (max-width: 505px) {
+   .headerText img {
+      display: none;
    }
-}
 
-@media (max-width: 375px) {
+   .hideText {
+      display: block;
+   }
+
    .headerPicContainer {
-      width: 70%;
+      width: 60%;
+      margin: 20px 0 8px 0;
    }
 }

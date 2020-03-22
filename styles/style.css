@@ -386,22 +386,28 @@ img {
 
 @media (max-width: 800px) {
   h1 {
-    font-size: 8.5rem;
-  }
-}
-
-@media (max-width: 620px) {
-  h1 {
     font-size: 6.5rem;
   }
 }
 
-@media (max-width: 465px) {
+@media (max-width: 480px) {
+  h1 {
+    font-size: 6rem;
+  }
   h2 {
-    font-size: 5.4rem;
+    font-size: 5rem;
   }
   h3 {
     font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 4rem;
   }
 }
 
@@ -509,6 +515,16 @@ header {
   top: -13.5rem;
 }
 
+.hideText {
+  display: none;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transform: translateY(-3.7rem);
+          transform: translateY(-3.7rem);
+}
+
 @media (max-width: 1235px) {
   .wrapperHeader {
     max-width: 1000px;
@@ -539,32 +555,37 @@ header {
 }
 
 @media (max-width: 800px) {
+  .headerText img {
+    max-width: 7rem;
+    right: -2.5rem;
+    top: -5.5rem;
+  }
   .hero {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .headerPicContainer {
     width: 40%;
     margin: 40px 0 8px 0;
   }
   .headerText {
-    position: absolute;
-    top: 80px;
     margin: 0;
+    max-width: 50%;
   }
 }
 
-@media (max-width: 480px) {
-  .headerPicContainer {
-    margin-top: 60px;
+@media (max-width: 505px) {
+  .headerText img {
+    display: none;
   }
-}
-
-@media (max-width: 375px) {
+  .hideText {
+    display: block;
+  }
   .headerPicContainer {
-    width: 70%;
+    width: 60%;
+    margin: 20px 0 8px 0;
   }
 }
 

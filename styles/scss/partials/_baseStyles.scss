@@ -146,22 +146,30 @@ img {
 
 @media (max-width: 800px) {
    h1 {
-      font-size: 8.5rem;
-   }
-}
-
-@media (max-width: 620px) {
-   h1 {
       font-size: 6.5rem;
    }
 }
 
-@media (max-width: 465px) {
-   h2 {
-      font-size: 5.4rem;
+@media (max-width: 480px) {
+   h1 {
+      font-size: 6rem;
    }
 
+   h2 {
+      font-size: 5rem;
+   }
+   
    h3 {
       font-size: 3.5rem;
+   }
+}
+
+@media (max-width: 390px) {
+   h1 {
+      font-size: 4.5rem;
+   }
+
+   h2 {
+      font-size: 4rem;
    }
 }
