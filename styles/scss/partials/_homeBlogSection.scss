@@ -1,161 +1,90 @@
 .blogSection {
    display: grid;
-   grid-template-columns: 1fr 38% 6% 20px 6% 38% 1fr;
-   grid-template-rows: 20px 20px 20px 40% 20px 10px 20px 40% 40px 20px;
+   grid-template-columns: 1fr 40% 0.5fr 40% 1fr;
    background: white;
 }
 
 .leftPic {
-   grid-column: 2 / 4;
-   grid-row: 1 / 5;
-   transform: translateY(-40px);
-}
-
-.background1 {
-   background: $primaryColor;
-   grid-column: 1 / 5;
-   grid-row: 2 / 6;
-   width: 100%;
-   transform: translateY(-40px);
+   grid-column: 2 / 3;
+   transform: translateY(-4rem);
+   box-shadow: 2rem 2rem 0 $primaryColor, -30rem 2rem 0 $primaryColor;
 }
 
 .rightText {
-   grid-column: 6 / 7;
-   grid-row: 4 / 6;
+   grid-column: 4 / 5;
+   padding-top: 2rem;
+   padding-left: 1rem;
 }
 
 .leftText {
    grid-column: 2 / 3;
-   grid-row: 7 / 9;
-   padding-top: 40px;
+   padding-top: 2rem;
    display: flex;
    flex-direction: column;
-   transform: translate(0, 20px);
    button {
       align-self: flex-end;
    }
 }
 
 .rightPic {
-   grid-column: 4 / 7;
-   grid-row: 7 / 10;
-   transform: translate(0, 60px);
+   grid-column: 4 / 5;
+   transform: translate(0, 2rem);
+   box-shadow: 2rem 2rem 0 $primaryColorLighter, 30rem 2rem 0 $primaryColorLighter;
 }
 
-.background2 {
-   background-color: $primaryColorLighter;
-   width: 100%;
-   grid-column: 5 / 8;
-   grid-row: 8 / 11;
-   transform: translate(0, 60px);
-}
+// MEDIA QUERIES
 
-.blogPicContainer {
-   position: relative;
-   z-index: 5;
-}
-
-@media (max-width: 1270px) {
-   .rightText {
-      transform: translateY(-30px);
-   }
-}
-
-@media (max-width: 1120px) {
+@media (max-width: 1226px) {
    .blogSection {
-      grid-template-columns: 1fr 42% 4% 20px 4% 42% 1fr;
-   }
-}
-
-@media (max-width: 1060px) {
-   .blogSection {
-      grid-template-columns: 1fr 57% 20px 2fr;
-      grid-template-rows: [startPic1] 20px [startSection1] 300px [endPic1] 60px [endSection1] 30px [startSection2] 300px [endSection2] 5px [startPic2] 20px [startSection3] 300px [endPic2] 60px [endSection3] 30px [startSection4] 300px [endSection4] 50px;
-   }
-
-   .leftPic {
-      grid-column: 2 / 3;
-      grid-row: startPic1 / endPic1;
-   }
-
-   .background1 {
-      grid-column: 1 / 4;
-      grid-row: startSection1 / endSection1;
+      grid-template-columns: 1fr 45% 0.5fr 45% 1fr;
    }
 
    .rightText {
-      grid-column: 2 / 3;
-      grid-row: startSection2 / endSection2;
-   }
-
-   .background2 {
-      grid-column: 1 / 4;
-      grid-row: startSection3 / endSection3;
-      transform: translate(0);
-   }
-
-   .rightPic {
-      grid-column: 2 / 3;
-      grid-row: startPic2 / endPic2;
-      transform: translate(0);
+      padding-left: 3rem;
    }
 
    .leftText {
-      display: block;
+      justify-content: start;
+      padding-right: 3rem;
+   }
+}
+
+@media (max-width: 1090px) {
+   .blogSection {
+      grid-template-columns: 1fr 60% 1fr;
+      grid-gap: 4rem;
+   }
+
+   .leftPic, .rightText, .rightPic, .leftText {
       grid-column: 2 / 3;
-      grid-row: startSection4 / endSection4;
+   }
+
+   .rightPic {
       transform: translate(0);
-      padding-top: 0;
+   }
+
+   .leftText, .rightText {
+      padding: 0;
+   }
+
+   .leftText button {
+      align-self: start;
    }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 820px) {
    .blogSection {
-      grid-template-columns: 1fr 60% 20px 1fr;
+      grid-template-columns: 1fr 80% 1fr;
    }
 }
 
-@media (max-width: 900px) {
-   .blogSection {
-      grid-template-columns: 1fr 66% 20px 1fr;
-   }
-}
-
-@media (max-width: 835px) {
-   .blogSection {
-      grid-template-columns: 1fr 72% 20px 1fr;
-   }
-}
-
-@media (max-width: 770px) {
-   .blogSection {
-      grid-template-columns: 1fr 78% 20px 1fr;
-   }
-}
-
-@media (max-width: 680px) {
-   .blogSection {
-      grid-template-columns: 1fr 88% 20px 1fr;
-   }
-}
-
-@media (max-width: 605px) {
-   .blogSection {
-      display: block;
-      padding: $padding-sm 0;
+@media (max-width: 404px) {
+   .leftPic {
+      box-shadow: -2rem 2rem 0 $primaryColor;
+      transform: translateY(-2rem);
    }
 
-   .blogTextContainer {
-      width: 85%;
-      margin: 0 auto;
-      padding: 20px 0;
-   }
-
-   .background1, .background2 {
-      display: none;
-   }
-
-   .blogPicContainer {
-      display: none;
+   .rightPic {
+      box-shadow: 2rem 2rem 0 $primaryColorLighter;
    }
 }
